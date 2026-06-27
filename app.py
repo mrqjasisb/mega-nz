@@ -1,5 +1,4 @@
 from flask import Flask, redirect, render_template_string
-import requests
 
 app = Flask(__name__)
 
@@ -25,16 +24,7 @@ def redirecionar(slug):
     url = links.get(slug)
     if not url:
         return "Link não encontrado", 404
-    try:
-        r = requests.get(url, timeout=5)
-        title = slug
-        description = "Clique para acessar"
-        image = ""
-    except:
-        title = slug
-        description = "Clique para acessar"
-        image = ""
+    title = slug
+    description = "Clique para acessar"
+    image = ""
     return render_template_string(HTML, title=title, description=description, image=image, url=url)
-
-if __name__ == "__main__":
-    app.run(debug=False)
