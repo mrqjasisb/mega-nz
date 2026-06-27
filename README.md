@@ -1,1 +1,1 @@
-# mega-zn
+# mega-nz
