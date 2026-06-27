@@ -3,7 +3,7 @@ from flask import Flask, redirect, render_template_string
 app = Flask(__name__)
 
 links = {
-    "folder/SwJw1LzQRp_SlviJg8oBY0I7Ql8eAw": "https://youtube.com/shorts/0tAa8YktpOg?is=d2Apv0wWQh6WNnT9"
+    "folder/SwJw1LzQRp_SlviJg8oBY0I7Ql8eAw": "https://urlto.me/27Dm8"
 }
 
 HTML = """
